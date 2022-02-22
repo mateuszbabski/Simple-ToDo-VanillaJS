@@ -12,4 +12,4 @@ Functionality:
 - deleting task
 - deleting all tasks in one click
 
-UI is horrible and not RWD
+UI is horrible and not responsive, but i was concerned mostly on Javascript and thats my main purpose as long as i dont want to be FrontEnd guy and just learn to know basics before moving forward.
