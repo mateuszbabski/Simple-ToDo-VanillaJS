@@ -49,11 +49,8 @@ class Todo {
 
   taskDone(e) {
     e.preventDefault();
-
-    const btn = e.target.closest(".buttonTask");
     const task = e.target.closest("li").firstChild;
-    if (!btn) return;
-    if (btn.classList.contains("task-done")) task.style.color = "green";
+    task.style.color = "green";
   }
 
   taskEdit(e) {
@@ -65,7 +62,6 @@ class Todo {
     let input = document.querySelector(".task-name");
     let idx = todos.indexOf(name);
 
-    ////////////// TU POPRAWIC ZEBY ZMIENILO ARRAY VALUE
     window.addEventListener("keydown", e => {
       if (e.key === "Enter") {
         if (!editTodo.value) {
